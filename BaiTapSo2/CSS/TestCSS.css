@@ -1,8 +1,8 @@
 body{
     width: 750px;
-    /* position: relative;
+    position: relative;
     left: 50%;
-    transform: translateX(-50%); */
+    transform: translateX(-50%);
 }
 .header1{
     background-color: #52a7f9;
