@@ -1,0 +1,136 @@
+body{
+    width: 750px;
+    /* position: relative;
+    left: 50%;
+    transform: translateX(-50%); */
+}
+.header1{
+    background-color: #52a7f9;
+    height: 50px;
+    margin-bottom: 4px;
+}
+.section1{
+    display: flex;
+    height: 150px;
+    margin: 0 15px 0 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.section1 .main-content{
+    flex-grow: 3;
+    background-color:#6fc041;
+    margin-right: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+.section1 .sidebar{
+    flex-grow: 2;
+    background-color: #b36ae2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1 .twin{
+    margin: 4px 4px 4px 0;
+    background-color: #f3901a;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1 .twin:last-child{
+    margin-right: 0;
+}
+.footer1{
+    height: 50px;
+    background-color: #0365c0;
+}
+.IMG2{
+    color: #7ca862;
+    font-weight: bold;
+    font-size: 25px;
+}
+.header2{
+    height: 50px;
+    border: 3px solid #9a9a9a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4px;
+}
+.section2{
+    display: flex;
+    height: 150px;
+    margin-bottom: 4px;
+}
+.section2 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #9a9a9a;
+}
+.section2 .main{
+    flex-grow: 2;
+    margin: 0 4px 0 4px;
+}
+.section2 .content{
+    flex-grow: 1;
+}
+.IMG3{
+    background-color: #c4ebf9;
+    font-size: 25px;
+    color: white;
+    padding: 15px;
+}
+.header3{
+    background-color: #02bfb1;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section3{
+    height: 250px;
+    display: flex;
+    margin-bottom: 10px;
+}
+.section3 .aside{
+    flex-grow: 1;
+    margin:10px 10px 0 0;
+    background-color: #6edb6e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section3 .article-form{
+    flex-grow: 3;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-content: flex-end;
+    background-color: #fbb04c;
+}
+.section3 .article-form .center{
+    display: flex;
+    justify-content: center;
+}
+.section3 .article-form div{
+    width: 100%;
+}
+.section3 .article-form .article{
+    display: flex;
+}
+.section3 .article .image{
+    flex-grow: 1;
+    height: 100px;
+    background-color: #fcd24a;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
