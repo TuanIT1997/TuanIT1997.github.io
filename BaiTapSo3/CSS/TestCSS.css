@@ -10,6 +10,10 @@ body{
     transform: translateX(-50%);
     -ms-transform: translateX(-50%);
 }
+#header{
+    position: sticky;
+    top: 0;
+}
 .background{
     height: 250px;
 }
