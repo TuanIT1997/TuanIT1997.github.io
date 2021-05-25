@@ -86,7 +86,7 @@ function Bai6(arr){
         if (Number.isFinite(arr[i])){
             tong+=arr[i]
         }else{
-            
+            return `Nhập sai dữ liệu `
         }
     }
     return tong
