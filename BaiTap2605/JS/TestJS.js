@@ -18,6 +18,10 @@ function Bai2(arr) {
             if (arr[i]>arr[viTri1]){
                 viTri2=viTri1;
                 viTri1=i;
+            }else{
+                if (arr[i]>arr[viTri2]){
+                    viTri2=i;
+                }
             }
         }
         else{
@@ -26,7 +30,7 @@ function Bai2(arr) {
     }
     return arr[viTri2];
 }
-document.write(`Bài 2: `,Bai2([3]),`<br>`)
+document.write(`Bài 2: `,Bai2([3,5,4324324,4324,43]),`<br>`)
 ///////////////////////////////////////////////
 function Bai3(arr){
     let viTri=0;
