@@ -1,0 +1,19 @@
+.lunar{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding-top: 100px;
+    height: 200px;
+    width: 763px;
+    background-image: url("https://quangcaominhlong.vn/wp-content/uploads/2020/12/background-tet-nguyen-dan_105957525.jpg");
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 2;
+    font-size: 20px;
+}
+#demo{
+    background-color: #222;
+    color: white;
+}
