@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.header{
+    color: white;
+    background-color: #009688;
+    padding: 8px 16px;
+}
+.header h4{
+    font-family: "Segoe UI",Arial,sans-serif;
+    text-align: center;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 20px;
+}
+@keyframes headerH1{
+    0%{bottom: -300px;opacity: 0;}
+    100%{bottom: 0px;opacity: 1;}
+}
+.header h1{
+    font-family: "Segoe UI",Arial,sans-serif;
+    text-align: center;
+    position: relative;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 48px;
+    animation: headerH1 1s;
+}
+.header div{
+    padding: 32px 0;
+    text-align: center;
+}
+.header div button{
+    font-weight: 900;
+    font-size: 24px;
+    color: inherit;
+    background-color: #004a43;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.header div button:hover{
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    background-color: #009688;
+}
+.bar{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 24px;
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}    
+.bar:hover{
+    background-color: #ccc;
+    color: black;
+}
+@keyframes OpenBarMenu{
+    0%{left: -300px;opacity: 0;}
+    100%{left: 0;opacity: 1;}
+}
+#bar-menu{
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    padding-top: 10%;
+    text-align: center;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-name: OpenBarMenu;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    background-color: #fff;
+    position: fixed!important;
+    z-index: 1;
+    overflow: auto;
+}
+#bar-menu h1{
+    color: #009688;
+    font-size: 48px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+#bar-menu button{
+    text-align: center;
+    width: 100%;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    font: inherit;
+}
+#bar-menu button:hover{
+    background-color: #ccc;
+}
+.row{
+    margin-top: 16px;
+    text-align: center;
+    padding: 0 8px;
+}
+.row::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.column3{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 0 8px;
+}
+@media screen and (min-width:600px) {
+    .column3{width: 33.33333%;}
+}
+.column3 div{
+    min-height: 460px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    padding: 0.01em 16px;
+}
+.column3 div h3{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 24px;
+}
+.column3 div i{
+    font-size: 120px;
+    display: inline-block;
+    font: normal normal normal 14px/1;
+    color: #009688;
+    margin-bottom: 30px;
+}
+.column3 div p{
+    margin-bottom: 15px;
+}
+hr{
+    border-top: 1px solid #eee;
+    margin: 20px 0; 
+}
+.color{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 30px;
+}
+.column6{
+    float: left;
+    width: 100%;
+    padding: 15px 16px;   
+}
+.red{
+    text-align: left;
+    color: white;
+    background-color: #f44336;
+}
+.blue{
+    text-align: left;
+    color: #fff;
+    background-color: #2196F3;
+}
+.grey{
+    text-align: left;
+    color: #fff;
+    background-color: #607d8b;
+}
+.teal{
+    text-align: left;
+    color: #fff;
+    background-color: #009688;
+}
+.yellow{
+    text-align: left;
+    color: #000;
+    background-color: #ffeb3b;
+}
+.orange{
+    text-align: left;
+    color: #000;
+    background-color: #ff9800;
+}
+@media screen and (min-width:600px) {
+    .column6{
+        width: 16.66666%;
+    }
+}
+.resize{
+    font-size: 18px;
+    text-align: center;
+    margin: 18px 0;
+}
+.border{
+    border: 1px solid #ccc;
+}
+.column2{
+    float: left;
+    width: 100%;
+}
+@media screen and (min-width:600px) {
+    .column2{
+        width: 49.99999%;
+    }
+}
+.column2 .blue{
+    padding: 0px 16px;
+}

@@ -1,0 +1,273 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html, body, h1, h2, h3, h4, h5 {
+    font-family: "RobotoDraft", "Roboto", sans-serif;
+}
+html,body{
+    font-size: 15px;
+    line-height: 1.5;
+}
+@keyframes example-left{
+    0% {left: -300px;opacity: 0;}
+    100% {left:0;opacity:1;}
+}
+.menu{
+    display: none;
+    position: fixed;
+    width: 320px;
+    height: 100%;
+    z-index: 3;
+    overflow: auto;
+    color: black;
+    background-color: white;
+    animation: example-left 0.4s;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+.menu-a{
+    display: block;
+    padding: 16px;
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.menu-a:hover{
+    color: #000;
+    background-color: #ccc;
+}
+.menu-a i{
+    margin-right: 8px;
+}
+.right-i{
+    margin-left: 8px;
+}
+.w3school{
+    border-bottom: 1px solid #ccc;
+}
+.w3school img{
+    width: 60%;
+}
+#message{
+    color: white;
+    background-color: #616161;
+}
+#message:hover{
+    background-color: black;
+}
+.ibox-red{
+    color: #fff;
+    background-color: #f44336;
+}
+.info{
+    padding: 0.01em 16px;
+    transition: margin-left 0.4s;
+}
+.info-bar{
+    display: inline-block;
+    margin: 16px 0 0 16px;
+    font-size: 24px;
+    vertical-align: middle;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.info-bar:hover,.info-pen:hover{
+    color: black;
+    background-color: #ccc;
+}
+.info-pen{
+    float: right;
+    margin: 16px 16px 0 0 ;
+    color: white;
+    vertical-align: middle;
+    padding: 8px 16px;
+    background-color: #f44336;
+    cursor: pointer;
+}
+.main{
+    padding: 16px;
+}
+@keyframes example-top{
+    0% {top: -300px;opacity: 0;}
+    100% {top:0;opacity:1;}
+}
+.main img{
+    width: 20%;
+    position: relative;
+    vertical-align: middle;
+    border-radius: 4px;
+    animation: example-top 0.4s;
+}
+.main h5{
+    margin: 10px 0;
+    opacity: 0.6;
+    font-weight: 400;
+    font-size: 18px;
+}
+.main h4{
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 400;
+} 
+.main a{
+    display: inline-block;
+    color: black;
+    background-color: #f1f1f1;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.main a i{
+    margin-left: 16px;
+}
+.main hr{
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+.main p{
+    margin-bottom: 16px;
+}
+.background{
+    z-index: 4;
+    position: fixed;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+@keyframes example-top{
+    0% {top: -300px;opacity: 0;}
+    100% {top:0;opacity:1;}
+}
+@keyframes example-zoom{
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
+.mail{
+    width: auto;
+    margin: 0 10px;
+    position: relative;
+    background-color: #fff;
+    animation: example-zoom 0.6s;
+}
+.mail-top{
+    color: white;
+    background-color: #f44336;
+    padding: 8px 16px;
+}
+.mail-top h2{
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+.mail-top h2 i {
+    display: block;
+    float: right;
+    font-size: 36px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.mail-top h2 i:hover{
+    color: #000;
+    background-color: #ccc;
+}
+.mail-main{
+    margin: 16px 0;
+    padding: 0.01em 16px;
+}
+.mail-main input{
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+.mail-footer{
+    margin: 16px 0;
+}
+.mail-footer a:first-child{
+    display: inline-block;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #f44336;
+    cursor: pointer;
+}
+.mail-footer a:last-child{
+    float: right;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+.mail-footer a:hover{
+    color: #000;
+    background-color: #ccc;
+}
+.person-list{
+    position: relative;
+    animation: example-left 0.4s;
+}
+.person{
+    display: block;
+    padding: 16px;
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+.person:hover{
+    background-color: #f1f1f1;
+}
+.person-active{
+    background-color: #f1f1f1;
+}
+.person img{
+    width: 15%;
+    vertical-align: middle;
+    margin-right: 16px;
+    border-radius: 4px;
+}
+.person span{
+    font-size: 18px;
+    opacity: 0.6;
+}
+.person h6{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 16px;
+}
+.person p{
+    margin-top: 16px;
+}
+#close-bar{
+    display: block;
+    font-size: 18px;
+}
+@media screen and (min-width:600px) {
+    .mail{
+        width: 500px;
+        margin: auto;
+    }
+}
+@media  screen and (min-width:768px) {
+    .background{padding-top: 100px;}
+    .mail{width: 600px;}
+}
+@media screen and (min-width:993px) {
+    .menu{display: block !important;}
+    .info{margin-left: 320px;}
+    .info-bar,.info-pen{display: none !important;}
+    .mail{width: 900px;}
+    #close-bar{display: none !important;}
+}
