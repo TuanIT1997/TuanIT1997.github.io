@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+body{
+    max-width: 1300px;
+    margin: auto;
+}
+.row::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.left{
+    width: 100%;
+    float: left;
+}
+.logo{
+    height: 700px;
+    color: #fff;
+    padding: 0.01em 16px;;
+    background-color: #000;
+}
+.logo-padding{
+    padding: 64px 0;
+    text-align: center;
+}
+.logo-padding h1{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 36px;
+}
+.logo-padding a{
+    display: block;
+    width: 100%;
+    color: inherit;
+    padding: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+#a-home:hover{
+    background-color: #607d8b;
+}
+#a-work:hover{
+    background-color: #009688;
+}
+#a-resume:hover{
+    background-color: #616161;
+}
+#a-contact:hover{
+    background-color: #795548;
+}
+.about-me{
+    height: 700px;
+    color: #fff;
+    background-color: #607d8b;
+}
+.about-me-padding{
+    padding: 64px;
+    text-align: center;
+}
+.about-me-padding h1{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 36px;
+}
+.about-me img{
+    width: 50%;
+    margin: 16px;
+    border-radius: 50%;
+}
+.about-me-footer{
+    text-align: left;
+    padding: 12px 24px;
+}
+.about-me-footer p{
+    margin: 15px 0;
+}
+#my-work{
+    min-height: 800px;
+    text-align: center;
+    color: #000;
+    background-color: #f1f1f1;
+}
+#my-work div:first-child{
+    margin: 64px 0;
+}
+#my-work div:first-child h2{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 30px;
+}
+#my-work p{
+    margin: 15px 0;
+}
+.left-img{
+    display: none;
+    width: 100%;
+    height: auto;
+}
+#resume{
+    min-height: 800px;
+    color: #fff;
+    padding: 0.01em 16px;
+    background-color: #3f51b5;
+}
+.resume-pad{
+    padding: 64px 0;
+    text-align: center;
+    overflow-x: auto;
+}
+.resume-pad h2{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 30px;
+}
+.resume-pad p{
+    margin: 15px 0;
+}
+.resume-pad table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 0.01em 16px;
+    overflow-x: auto;
+}
+.resume-pad table th,.resume-pad table td{
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+.resume-pad table th:first-child,.resume-pad table td:first-child{
+    padding-left: 16px;
+}
+.resume-pad table tr:nth-child(even){
+    color: #000;
+    background-color: #fff;
+}
+#swing{
+    height: 700px;
+    color: #fff;
+    text-align: center;
+    padding: 00.01em 16px;
+    background-color: #616161;
+}
+#swing div{
+    padding: 64px 0;
+}
+#swing h1{
+    margin: 10px 0;
+    font-size: 36px;
+    font-weight: 400;
+}
+#swing p{
+    margin: 15px 0;
+}
+#contact{
+    height: 700px;
+    color: #fff;
+    padding: 0.01em 16px;
+    background-color: #009688;
+}
+#contact div{
+    padding: 64px 24px;
+}
+#contact h1{
+    margin: 10px 0;
+    font-size: 36px;
+    font-weight: 400;
+}
+#contact p{
+    margin: 15px 0;
+    opacity: 0.6;
+}
+#contact form{
+    color: #000;
+    padding: 32px 16px;
+    background-color: #fff;
+}
+.form-div{
+    padding: 0 !important;
+    margin: 16px 0;
+}
+input[type=text]{
+    display: block;
+    overflow: visible;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+form button{
+    float: right;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #009688;
+    border: none;
+    cursor: pointer;
+}
+form button:hover{
+    color: #000;
+    background-color: #ccc;
+}
+form::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.footer{
+    color: #fff;
+    padding: 16px;
+    background-color: #000;
+}
+.footer p{
+    margin: 15px 0;
+}
+.footer a{
+    color: inherit;
+}
+@media screen and (min-width:600px) {
+    .left{width: 50%;}
+    .left-img{display: block;}
+}
+
+
