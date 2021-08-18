@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+}   
+html,body{
+    font-family: "RobotoDraft", "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+} 
+ul{
+    width: 100%;
+    height: 48px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+li{
+    float: left;
+}
+li a{
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgba(204, 176, 138, 80%);
+}
+.bar-icon{
+    display: inline-block;
+}
+.time-icon{
+    display: none;
+}
+.img-icon a{
+    padding: 0 16px ;
+}
+.img-icon img{
+    height: 48px;
+    width: 48px;
+}
+.user{
+    float: right;
+}
+.user a{
+    padding: 0;
+}
+.user img{
+    margin: 4px 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.ipad-hide{
+    display: none;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.mobi-hide{
+    display: none;
+}
+@keyframes example-left{
+    0%{left:-300px;opacity: 0;}
+    100%{left: 0;opacity: 1;}
+}
+.side-menu{
+    display: none;
+    position: absolute;
+    top: 48px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    animation: example-left 0.5s;
+}
+.side-menu a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 12px 16px;
+}
+.banner{
+    width: 100%;
+}
+@media screen and (min-width:600px) {
+    .bar-icon,.time-icon{display: none !important;}
+    .mobi-hide{display: inline-block;}
+    .side-menu{display: none !important;}
+}
+@media screen and (min-width:992px) {
+    .ipad-hide{display: inline-block;}
+    .dropdown{display: none;}
+}
