@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Template</title>
+  <link rel="stylesheet" href="css/TestCSS.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body class="light-grey">
+  <div class="bar white large">
+    <a class="bar-item button red mobile" href="#">
+      <i class="fas fa-bed"></i>
+      &nbsp; Logo
+    </a>
+    <a class="bar-item button mobile" href="#rooms">Rooms</a>
+    <a class="bar-item button mobile" href="#about">About</a>
+    <a class="bar-item button mobile" href="#contact">Contact</a>
+    <a class="bar-item button right light-grey mobile" href="#">Book Now</a>
+  </div>
+  <div class="display-container content" style="max-width: 1500px;">
+    <img class="image" src="https://www.w3schools.com/w3images/hotel.jpg" alt="" style="min-width: 1000px;">
+    <div class="display-left padding col l6 m8">
+      <div class="container red">
+        <h2>
+          <i class="fas fa-bed margin-right"></i>
+          Hotel Name
+        </h2>
+      </div>
+      <div class="container white padding-16">
+        <form action="">
+          <div class="row-padding" style="margin: 0 -16px;">
+            <div class="half margin-bottom">
+              <label for="">
+                <i class="far fa-calendar"></i>
+                &nbsp; Check In
+              </label>
+              <input class="input border" type="text" placeholder="DD MM YYYY">
+            </div>
+            <div class="half">
+              <label for="">
+                <i class="far fa-calendar"></i>
+                &nbsp; Check Out
+              </label>
+              <input class="input border" type="text" placeholder="DD MM YYYY">
+            </div>
+          </div>
+          <div class="row-padding" style="margin: 8px -16px;">
+            <div class="half margin-bottom">
+              <label for="">
+                <i class="fas fa-male"></i>
+                &nbsp; Adults
+              </label>
+              <input class="input border" type="number" name="" id="" value="1" min="1" max="6">
+            </div>
+            <div class="half">
+              <label for="">
+                <i class="fas fa-child"></i>
+                &nbsp; Kids
+              </label>
+              <input class="input border" type="number" name="" id="" value="0" min="0" max="6">
+            </div>
+          </div>
+          <button class="button dark-grey">
+            <i class="fas fa-search margin-right"></i>
+            Search availability
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="content" style="max-width: 1532px;">
+    <div class="container margin-top" id="rooms">
+      <h3>Rooms</h3>
+      <p>Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</p>
+    </div>
+    <div class="row-padding">
+      <div class="col m3">
+        <label for="">
+          <i class="far fa-calendar"></i>
+          Check In
+        </label>
+        <input class="input border" type="text" placeholder="DD MM YYYY">
+      </div>
+      <div class="col m3">
+        <label for="">
+          <i class="far fa-calendar"></i>
+          Check Out
+        </label>
+        <input class="input border" type="text" placeholder="DD MM YYYY">
+      </div>
+      <div class="col m2">
+        <label for="">
+          <i class="fas fa-male"></i>
+          Adults
+        </label>
+        <input class="input border" type="number" name="" id="" value="1" min="1" max="6">
+      </div>
+      <div class="col m2">
+        <label for="">
+          <i class="fas fa-child"></i>
+          Kids
+        </label>
+        <input class="input border" type="number" name="" id="" value="0" min="0" max="6">
+      </div>
+      <div class="col m2">
+        <label for="">
+          <i class="fas fa-search"></i>
+          Search
+        </label>
+        <button class="button block black">Search</button>
+      </div>
+    </div>
+    <div class="row-padding padding-16">
+      <div class="third margin-bottom">
+        <img src="https://www.w3schools.com/w3images/room_single.jpg" alt="" style="width: 100%;">
+        <div class="container white">
+          <h3>Single Room</h3>
+          <h6 class="opacity">From $99</h6>
+          <p>Single bed</p>
+          <p>
+            15m <sup>2</sup>
+          </p>
+          <p class="large">
+            <i class="fas fa-bath"></i>
+            <i class="fas fa-phone-alt"></i>
+            <i class="fas fa-wifi"></i>
+          </p>
+          <button class="button block black margin-bottom">Choose Room</button>
+        </div>
+      </div>
+      <div class="third margin-bottom">
+        <img src="https://www.w3schools.com/w3images/room_double.jpg" alt="" style="width: 100%;">
+        <div class="container white">
+          <h3>Double Room</h3>
+          <h6 class="opacity">From $149</h6>
+          <p>Queen-size bed</p>
+          <p>
+            25m <sup>2</sup>
+          </p>
+          <p class="large">
+            <i class="fas fa-bath"></i>
+            <i class="fas fa-phone-alt"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-tv"></i>
+          </p>
+          <button class="button block black margin-bottom">Choose Room</button>
+        </div>
+      </div>
+      <div class="third margin-bottom">
+        <img src="https://www.w3schools.com/w3images/room_deluxe.jpg" alt="" style="width: 100%;">
+        <div class="container white">
+          <h3>Deluxe Room</h3>
+          <h6 class="opacity">From $199</h6>
+          <p>King-size bed</p>
+          <p>
+            40m <sup>2</sup>
+          </p>
+          <p class="large">
+            <i class="fas fa-bath"></i>
+            <i class="fas fa-phone-alt"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-glass-martini"></i>
+            <i class="fas fa-utensils"></i>
+          </p>
+          <button class="button block black margin-bottom">Choose Room</button>
+        </div>
+      </div>
+    </div>
+    <div class="row-padding" id="about">
+      <div class="col l4">
+        <h3>About</h3>
+        <h6>Our hotel is one of a kind. It is truely amazing. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h6>
+        <p>
+          We accept:
+          <i class="far fa-credit-card large"></i>
+          <i class="fab fa-cc-mastercard large"></i>
+          <i class="fab fa-cc-amex large"></i>
+          <i class="fab fa-cc-visa large"></i>
+          <i class="fab fa-cc-paypal large"></i>
+        </p>
+      </div>
+      <div class="col l8">
+        <img class="image greyscale" src="https://www.w3schools.com/w3images/map.jpg" alt="" style="width: 100%;">
+      </div>
+    </div>
+    <div class="row-padding large center" style="margin: 32px 0;">
+      <div class="third">
+        <i class="fas fa-map-marker-alt text-red"></i>
+        423 Some adr, Chicago, US
+      </div>
+      <div class="third">
+        <i class="fas fa-phone-alt text-red"></i>
+        Phone: +00 151515
+      </div>
+      <div class="third">
+        <i class="fas fa-envelope text-red"></i>
+        Email: mail@mail.com
+      </div>
+    </div>
+    <div class="panel red leftbar padding-32">
+      <h6>
+        <i class="fas fa-info padding margin-right deep-orange"></i>
+        On demand, we can offer playstation, babycall, children care, dog equipment, etc.
+      </h6>
+    </div>
+    <div class="container">
+      <h3>Our Hotels</h3>
+      <h6>You can find our hotels anywhere in the world:</h6>
+    </div>
+    <div class="row-padding padding-16 text-white large">
+      <div class="half margin-bottom">
+        <div class="display-container">
+          <img src="https://www.w3schools.com/w3images/cinqueterre.jpg" alt="" style="width: 100%;">
+          <span class="display-bottomleft padding">Cinque Terre</span>
+        </div>
+      </div>
+      <div class="half">
+        <div class="row-padding" style="margin: 0 -16px;">
+          <div class="half margin-bottom">
+            <div class="display-container">
+              <img src="https://www.w3schools.com/w3images/newyork2.jpg" alt="" style="width: 100%;">
+              <span class="display-bottomleft padding">New York</span>
+            </div>
+          </div>
+          <div class="half margin-bottom">
+            <div class="display-container">
+              <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="" style="width: 100%;">
+              <span class="display-bottomleft padding">San Francisco</span>
+            </div>
+          </div>
+        </div>
+        <div class="row-padding" style="margin: 0 -16px;">
+          <div class="half margin-bottom">
+            <div class="display-container">
+              <img src="https://www.w3schools.com/w3images/pisa.jpg" alt="" style="width: 100%;">
+              <span class="display-bottomleft padding">Pisa</span>
+            </div>
+          </div>
+          <div class="half margin-bottom">
+            <div class="display-container">
+              <img src="https://www.w3schools.com/w3images/paris.jpg" alt="" style="width: 100%;">
+              <span class="display-bottomleft padding">Paris</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container padding-32 black opacity card hover-opacity-off">
+      <h2>Get the best offers first!</h2>
+      <p>Join our newsletter.</p>
+      <label for="">E-mail</label>
+      <input class="input border" type="text" placeholder="Your Email address">
+      <button class="button red margin-top">Subcribe</button>
+    </div>
+    <div class="container" id="contact">
+      <h2>Contact</h2>
+      <p>If you have any questions, do not hesitate to ask them.</p>
+      <i class="fas fa-map-marker-alt text-red" style="width: 30px;"></i>
+      Chicago, US <br>
+      <i class="fas fa-phone-alt text-red" style="width: 30px;"></i>
+      Phone: +00 151515 <br>
+      <i class="fas fa-envelope text-red" style="width: 30px;"></i>
+      Email: mail@mail.com <br>
+      <form action="">
+        <p>
+          <input class="input padding-16 border" type="text" placeholder="Name">
+        </p>
+        <p>
+          <input class="input padding-16 border" type="text" placeholder="Email">
+        </p>
+        <p>
+          <input class="input padding-16 border" type="text" placeholder="Message">
+        </p>
+        <p>
+          <button class="button black padding-large">SEND MESSAGE</button>
+        </p>
+      </form>
+    </div>
+  </div>
+  <footer class="padding-32 black center margin-top">
+    <h5>Find Us On</h5>
+    <div class="xlarge padding-16">
+      <i class="fab fa-facebook-square hover-opacity"></i>
+      <i class="fab fa-instagram-square hover-opacity"></i>
+      <i class="fab fa-snapchat hover-opacity"></i>
+      <i class="fab fa-pinterest-p hover-opacity"></i>
+      <i class="fab fa-twitter hover-opacity"></i>
+      <i class="fab fa-linkedin-in hover-opacity"></i>
+    </div>
+    <p>
+      Powered by 
+      <a class="hover-text-green" href="https://www.facebook.com/tranluu.quoctuan.1" target="_blank">Tuan1906</a>
+    </p>
+  </footer>
+</body>
+
+</html>
