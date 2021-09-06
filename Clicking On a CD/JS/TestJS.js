@@ -1,5 +1,5 @@
 let i = 0;
-let cd;
+var cd;
 let len;
 const xhttp = new XMLHttpRequest();
 xhttp.onload = function () {
@@ -25,3 +25,4 @@ function displayCD(i) {
         "Title: " + cd[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue + "<br>" +
         "Year: " + cd[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue + "<br>";
 }
+
