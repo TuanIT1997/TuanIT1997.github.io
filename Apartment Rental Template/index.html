@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment Rental Template</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body class="content border-left border-right">
+    <nav style="width: 260px;z-index: 3;" class="sidebar light-grey collapse top">
+        <div class="container display-container padding-16">
+            <i class="fas fa-times hide-large button transparent display-topright" onclick="closeSidebar()"></i>
+            <h3>Rental</h3>
+            <h3>from $99</h3>
+            <h6>per night</h6>
+            <hr>
+            <form action="">
+                <p>
+                    <label for="">
+                        <i class="far fa-calendar-check"></i>
+                        Check in
+                    </label>
+                </p>
+                <input type="text" class="input border" placeholder="DD MM YYYY" required>
+                <p>
+                    <label for="">
+                        <i class="far fa-calendar"></i>
+                        Check out
+                    </label>
+                </p>
+                <input type="text" class="input border" placeholder="DD MM YYYY" required>
+                <p>
+                    <label for="">
+                        <i class="fas fa-male"></i>
+                        Adults
+                    </label>
+                </p>
+                <input type="number" class="input border" value="1" min="1" max="6">
+                <p>
+                    <label for="">
+                        <i class="fas fa-child"></i>
+                        Kids
+                    </label>
+                </p>
+                <input type="number" class="input border" value="0" min="0" max="6">
+                <p>
+                    <button class="button block green left-align" type="submit">
+                        <i class="fas fa-search"></i>
+                        Search availability
+                    </button>
+                </p>
+            </form>
+        </div>
+        <div class="bar-block ">
+            <a class="bar-item button padding-16" href="#apartment">
+                <i class="fas fa-building"></i>
+                Apartment
+            </a>
+            <a class="bar-item button padding-16" onclick="document.getElementsByClassName(`modal`)[0].style.display = `block`;">
+                <i class="fas fa-rss"></i>
+                Subscribe
+            </a>
+            <a class="bar-item button padding-16" href="#contact">
+                <i class="fas fa-envelope"></i>
+                Contact
+            </a>
+        </div>
+    </nav>
+    <header class="bar top hide-large black xlarge">
+        <span class="bar-item">Rental</span>
+        <a href="#" class="right bar-item button" onclick="openSidebar()">
+            <i class="fas fa-bars"></i>
+        </a>
+    </header>
+    <div class="overlay hide-large" style="cursor: pointer; display: none;" onclick="closeSidebar()"></div>
+    <div class="main white" style="margin-left: 260px;">
+        <div class="hide-large" style="margin-top: 80px;"></div>
+        <div class="container" id="apartment">
+            <h2 class="text-green">The Apartment</h2>
+            <div class="display-container mySlides" style="display: block;">
+                <img src="https://www.w3schools.com/w3images/livingroom.jpg" alt=""
+                    style="width: 100%; margin-bottom: -6px;">
+                <div class="display-bottomleft container black">
+                    <p>Living Room</p>
+                </div>
+            </div>
+            <div class="display-container mySlides" style="display: none;">
+                <img src="https://www.w3schools.com/w3images/diningroom.jpg" alt=""
+                    style="width: 100%; margin-bottom: -6px;">
+                <div class="display-bottomleft container black">
+                    <p>Dining Room</p>
+                </div>
+            </div>
+            <div class="display-container mySlides" style="display: none;">
+                <img src="https://www.w3schools.com/w3images/bedroom.jpg" alt=""
+                    style="width: 100%; margin-bottom: -6px;">
+                <div class="display-bottomleft container black">
+                    <p>Bedroom</p>
+                </div>
+            </div>
+            <div class="display-container mySlides" style="display: none;">
+                <img src="https://www.w3schools.com/w3images/livingroom2.jpg" alt=""
+                    style="width: 100%; margin-bottom: -6px;">
+                <div class="display-bottomleft container black">
+                    <p>Living Room II</p>
+                </div>
+            </div>
+        </div> 
+        <div class="row-padding section">
+            <div class="col s3">
+                <img class="opacity selectSlide hover-opacity-off opacity-off"
+                    src="https://www.w3schools.com/w3images/livingroom.jpg" alt="" title="Living Room"
+                    style="width: 100%;cursor: pointer;">
+            </div>
+            <div class="col s3">
+                <img class="opacity selectSlide hover-opacity-off" src="https://www.w3schools.com/w3images/diningroom.jpg" alt=""
+                    title="Dining Room" style="width: 100%;cursor: pointer;">
+            </div>
+            <div class="col s3">
+                <img class="opacity selectSlide hover-opacity-off" src="https://www.w3schools.com/w3images/bedroom.jpg" alt=""
+                    title="Bedroom" style="width: 100%;cursor: pointer;">
+            </div>
+            <div class="col s3">
+                <img class="opacity selectSlide hover-opacity-off" src="https://www.w3schools.com/w3images/livingroom2.jpg" alt=""
+                    title="Living Room II" style="width: 100%;cursor: pointer;">
+            </div>
+        </div>
+        <div class="container">
+            <h4>
+                <strong>The space</strong>
+            </h4>
+            <div class="row">
+                <div class="col s6">
+                    <p class="large">
+                        <i class="fas fa-male"></i>
+                        Max people: 4
+                    </p>
+                    <p class="large">
+                        <i class="fas fa-bath"></i>
+                        Bathrooms: 2
+                    </p>
+                    <p class="large">
+                        <i class="fas fa-bed"></i>
+                        Bedrooms: 1
+                    </p>
+                </div>
+                <div class="col s6">
+                    <p class="large">
+                        <i class="far fa-clock"></i>
+                        Check In: After 3PM
+                    </p>
+                    <p class="large">
+                        <i class="far fa-clock"></i>
+                        Check Out: 12PM
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <h4>
+                <strong>Amenities</strong>
+            </h4>
+            <div class="row">
+                <div class="col s6">
+                    <p class="large">
+                        <i class="fas fa-shower"></i>
+                        Shower
+                    </p>
+                    <p class="large">
+                        <i class="fas fa-wifi"></i>
+                        WiFi
+                    </p>
+                    <p class="large">
+                        <i class="fas fa-tv"></i>
+                        TV
+                    </p>
+                </div>
+                <div class="col s6">
+                    <p class="large">
+                        <i class="fas fa-utensils"></i>
+                        Kitchen
+                    </p>
+                    <p class="large">
+                        <i class="fas fa-thermometer-three-quarters"></i>
+                        Heating
+                    </p>
+                    <p class="large">
+                        <i class="fas fa-wheelchair"></i>
+                        Accessible
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <h4>
+                <strong>Extra Info</strong>
+            </h4>
+            <p>Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>
+                We accept:
+                <i class="large far fa-credit-card"></i>
+                <i class="large fab fa-cc-mastercard"></i>
+                <i class="large fab fa-cc-amex"></i>
+                <i class="large fab fa-cc-paypal"></i>
+            </p>
+            <hr>
+            <h4>
+                <strong>Rules</strong>
+            </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+            <p>Subscribe to receive updates on available dates and special offers.</p>
+            <p>
+                <button class="button green third" onclick="document.getElementsByClassName(`modal`)[0].style.display = `block`;">Subscribe</button>
+            </p>
+            <hr>
+        </div>
+        <div class="container" id="contact">
+            <h2>Contact</h2>
+            <i class="fas fa-map-marker-alt" style="width: 30px;"></i>
+            Chicago, US
+            <br>
+            <i class="fas fa-phone-alt" style="width: 30px;"></i>
+            Phone: +00 151515
+            <br>
+            <i class="fas fa-envelope" style="width: 30px;"></i>
+            Email: mail@mail.com
+            <br>
+            <p>Questions? Go ahead, ask them:</p>
+            <form action="">
+                <p>
+                    <input type="text" class="border input" placeholder="Name" required>
+                </p>
+                <p>
+                    <input type="text" class="border input" placeholder="Email" required>
+                </p>
+                <p>
+                    <input type="text" class="border input" placeholder="Message" required>
+                </p>
+                <button type="submit" class="button green third">Send a Message</button>
+            </form>
+        </div>
+        <footer class="container padding-16" style="margin-top: 32px;">
+            Powered by
+            <a href="https://www.facebook.com/tranluu.quoctuan.1/" class="hover-text-green">Tuan1906</a>
+        </footer>
+        <div class="modal" style="display: none;">
+            <div class="modal-content animate-zoom padding-large">
+                <div class="container white center">
+                    <i class="fas fa-times button xlarge right transparent"
+                    onclick="document.getElementsByClassName(`modal`)[0].style.display = `none`;"></i>
+                    <h3 class="wide">SUBSCRIBE</h3>
+                    <p>Join our mailing list to receive updates on available dates and special offers.</p>
+                    <p>
+                        <input type="text" class="input border" placeholder="Enter e-mail">
+                    </p>
+                    <button class="button padding-large green margin-bottom">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/js.js"></script>
+</body>
+
+</html>
