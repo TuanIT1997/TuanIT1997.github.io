@@ -1,3 +1,18 @@
+let gioHangJSON = localStorage.getItem("gioHang") || [];
+if (Array.isArray(gioHangJSON) == false){
+    gioHang = JSON.parse(gioHangJSON);
+}
+else{
+    gioHang = [];
+}
+let elSoluong = document.getElementsByClassName('total-soluong');
+let tongSoLuong = 0;
+for (let i = 0; i < gioHang.length; i++) {
+    tongSoLuong += Number(gioHang[i].soLuong);
+}
+for (let i = 0; i < elSoluong.length; i++) {
+    elSoluong[i].innerHTML = tongSoLuong;
+}
 let listValueDefault = "best";
 let sortValueDefault = "0";
 function menuShop(){

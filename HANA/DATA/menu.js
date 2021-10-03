@@ -377,7 +377,7 @@ var menu = [
         users:1009,
     },
     {
-        name:"Trà sữa trà xanh Nhật Bản",
+        name:"Trà xanh Nhật Bản",
         money: 55,
         years:2019,
         best:true,
