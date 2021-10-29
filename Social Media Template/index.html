@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics Template</title>
+  <link rel="stylesheet" href="/Social Media Template/css.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body class="light-grey">
+  <div class="bar top  black large" style="z-index: 4;">
+    <button class="bar-item button hide-large hover-none hover-text-light-grey" id="open-menu">
+      <i class="fas fa-bars"></i>
+      &nbsp;Menu
+    </button>
+    <span class="bar-item right">Logo</span>
+  </div>
+  <nav class="sidebar collapse white animate-left" style="z-index: 3; width: 300px;" id="sidebar">
+    <br>
+    <div class="container row">
+      <div class="col s4">
+        <img class="circle" src="https://www.w3schools.com/w3images/avatar2.png" alt="" style="width: 46px;">
+      </div>
+      <div class="col s8 bar">
+        <span>
+          Welcome, &nbsp;
+          <strong>Mike</strong>
+        </span>
+        <br>
+        <a href="#" class="bar-item button">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="#" class="bar-item button">
+          <i class="fas fa-user"></i>
+        </a>
+        <a href="#" class="bar-item button">
+          <i class="fas fa-cog"></i>
+        </a>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <h5>Dashboard</h5>
+    </div>
+    <div class="bar-block">
+      <a class="bar-item button padding-16 hide-large dark-grey hover-black" onclick="closeMenu()" id="close-menu">
+        <i class="fas fa-times"></i>
+        &nbsp; CLose Menu
+      </a>
+      <a class="bar-item button blue" href="#">
+        <i class="fas fa-users"></i>
+        &nbsp; Overview
+      </a>
+      <a class="bar-item button" href="#">
+        <i class="fas fa-eye"></i>
+        &nbsp; Views
+      </a>
+      <a class="bar-item button" href="#">
+        <i class="fas fa-users"></i>
+        &nbsp; Traffic
+      </a>
+      <a class="bar-item button" href="#">
+        <i class="fas fa-bullseye"></i>
+        &nbsp; Geo
+      </a>
+      <a class="bar-item button" href="#">
+        <i class="far fa-gem"></i>
+        &nbsp; Orders
+      </a>
+      <a class="bar-item button" href="#">
+        <i class="fas fa-bell"></i>
+        &nbsp; News
+      </a>
+      <a class="bar-item button" href="#">
+        <i class="fas fa-university"></i>
+        &nbsp; General
+      </a>
+      <a class="bar-item button" href="#">
+        <i class="fas fa-history"></i>
+        &nbsp; History
+      </a>
+      <a class="bar-item button" href="#">
+        <i class="fas fa-cog"></i>
+        &nbsp; Settings
+      </a>
+    </div>
+  </nav>
+  <div class="animate-opacity overlay" style="cursor: pointer;display: none;" id="overlay" onclick="closeMenu()"></div>
+  <div class="main" style="margin-left: 300px;margin-top: 43px;">
+    <header class="container" style="padding-top: 22px;">
+      <h5>
+        <b>
+          <i class="fas fa-tachometer-alt"></i>
+          My Dashboard
+        </b>
+      </h5>
+    </header>
+    <div class="row-padding margin-bottom">
+      <div class="quater">
+        <div class="container red padding-16">
+          <div class="left">
+            <i class="fas fa-comment xxxlarge"></i>
+          </div>
+          <div class="right">
+            <h3>52</h3>
+          </div>
+          <div class="clear"></div>
+          <h4>Messages</h4>
+        </div>
+      </div>
+      <div class="quater">
+        <div class="container blue padding-16">
+          <div class="left">
+            <i class="far fa-eye xxxlarge"></i>
+          </div>
+          <div class="right">
+            <h3>99</h3>
+          </div>
+          <div class="clear"></div>
+          <h4>Views</h4>
+        </div>
+      </div>
+      <div class="quater">
+        <div class="container teal padding-16">
+          <div class="left">
+            <i class="fas fa-share-alt xxxlarge"></i>
+          </div>
+          <div class="right">
+            <h3>23</h3>
+          </div>
+          <div class="clear"></div>
+          <h4>Shares</h4>
+        </div>
+      </div>
+      <div class="quater">
+        <div class="container orange padding-16">
+          <div class="left">
+            <i class="fas fa-users xxxlarge"></i>
+          </div>
+          <div class="right">
+            <h3>50</h3>
+          </div>
+          <div class="clear"></div>
+          <h4>Users</h4>
+        </div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="row-padding" style="margin: 0 -16px;">
+        <div class="third">
+          <h5>Regions</h5>
+          <img src="https://www.w3schools.com/w3images/region.jpg" alt="" style="width: 100%;">
+        </div>
+        <div class="twothird">
+          <h5>Feeds</h5>
+          <table class="table white">
+            <tr>
+              <td>
+                <i class="fas fa-user text-blue large"></i>
+              </td>
+              <td>New record, over 90 views.</td>
+              <td>
+                <i>10 mins</i>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-bell text-red large"></i>
+              </td>
+              <td>Database error.</td>
+              <td>
+                <i>15 mins</i>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-users text-yellow large"></i>
+              </td>
+              <td>New record, over 40 users.</td>
+              <td>
+                <i>17 mins</i>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-comment text-red large"></i>
+              </td>
+              <td>New comments.</td>
+              <td>
+                <i>25 mins</i>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-bookmark text-blue large"></i>
+              </td>
+              <td>Check transactions.</td>
+              <td>
+                <i>28 mins</i>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-laptop text-red large"></i>
+              </td>
+              <td>CPU overload.</td>
+              <td>
+                <i>35 mins</i>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-share-alt text-green large"></i>
+              </td>
+              <td>New shares.</td>
+              <td>
+                <i>39 mins</i>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <h5>General Stats</h5>
+      <p>New Visitors</p>
+      <div class="grey">
+        <div class="center padding green" style="width: 25%;">+25%</div>
+      </div>
+      <p>New Users</p>
+      <div class="grey">
+        <div class="center padding orange" style="width: 50%;">50%</div>
+      </div>
+      <p>Bounce Rate</p>
+      <div class="grey">
+        <div class="center padding red" style="width: 75%;">75%</div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <h5>Countries</h5>
+      <table class="table border hoverable white">
+        <tr>
+          <td>United States</td>
+          <td>65%</td>
+        </tr>
+        <tr>
+          <td>UK</td>
+          <td>15.7%</td>
+        </tr>
+        <tr>
+          <td>Russia</td>
+          <td>5.6%</td>
+        </tr>
+        <tr>
+          <td>Spain</td>
+          <td>2.1%</td>
+        </tr>
+        <tr>
+          <td>India</td>
+          <td>1.9%</td>
+        </tr>
+        <tr>
+          <td>France</td>
+          <td>1.5%</td>
+        </tr>
+      </table>
+      <br>
+      <button class="button dark-grey">
+        More Countries &nbsp;
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+    <hr>
+    <div class="container">
+      <h5>Recent Users</h5>
+      <ul class="ul card-4 white">
+        <li class="padding-16">
+          <img class="left circle margin-right" style="width: 35px;"
+            src="https://www.w3schools.com/w3images/avatar2.png" alt="">
+          <span class="large">Mike</span>
+          <br>
+        </li>
+        <li class="padding-16">
+          <img class="left circle margin-right" style="width: 35px;"
+            src="https://www.w3schools.com/w3images/avatar5.png" alt="">
+          <span class="large">Jill</span>
+          <br>
+        </li>
+        <li class="padding-16">
+          <img class="left circle margin-right" style="width: 35px;"
+            src="https://www.w3schools.com/w3images/avatar6.png" alt="">
+          <span class="large">Jane</span>
+          <br>
+        </li>
+      </ul>
+    </div>
+    <hr>
+    <div class="container">
+      <h5>Recent Comments</h5>
+      <div class="row">
+        <div class="col m2 text-center">
+          <img class="circle" style="width: 96px; height: 96px;" src="https://www.w3schools.com/w3images/avatar3.png"
+            alt="">
+        </div>
+        <div class="col m10 container">
+          <h4>
+            John
+            <span class="opacity medium">Sep 29, 2014, 9:12 PM</span>
+          </h4>
+          <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col m2 text-center">
+          <img class="circle" style="width: 96px; height: 96px;" src="https://www.w3schools.com/w3images/avatar1.png"
+            alt="">
+        </div>
+        <div class="col m10 container">
+          <h4>
+            Bo
+            <span class="opacity medium">Sep 28, 2014, 10:15 PM</span>
+          </h4>
+          <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <br>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container padding-32 dark-grey">
+      <div class="row">
+        <div class="container third">
+          <h5 class="bottombar border-green">Demographic</h5>
+          <p>Language</p>
+          <p>Country</p>
+          <p>City</p>
+        </div>
+        <div class="container third">
+          <h5 class="bottombar border-red">System</h5>
+          <p>Browser</p>
+          <p>OS</p>
+          <p>More</p>
+        </div>
+        <div class="container third">
+          <h5 class="bottombar border-orange">Target</h5>
+          <p>Users</p>
+          <p>Active</p>
+          <p>Geo</p>
+          <p>Interests</p>
+        </div>
+      </div>
+    </div>
+    <footer class="container padding-16">
+      <h4>FOOTER</h4>
+      <p>
+        Powered by &nbsp;
+        <a href="https://www.facebook.com/tranluu.quoctuan.1/">Tuan1906</a>
+      </p>
+    </footer>
+  </div>
+  <script src="/Social Media Template/js.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Launch Template</title>
+    <link rel="stylesheet" href="/AppLaunchTemplate/alt.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body class="content black" style="max-width: 1500px;">
+    <header class="display-container center">
+        <button onclick="openModal()" class="button block green hide-large hide-medium">
+            Download
+            <i class="fab fa-apple"></i>
+            <i class="fas fa-robot"></i>
+            <i class="fab fa-windows"></i>
+        </button>
+        <div class="mySlides animate-opacity" style="display: none;">
+            <img src="https://www.w3schools.com/w3images/app.jpg" alt="" class="image"
+                style="margin-bottom: -8px; min-width: 500px;" height="1000" width="1500">
+            <div class="display-left padding hide-small" style="width: 35%;">
+                <div class="black opacity hover-opacity-off padding-large round-large">
+                    <h1 class="xlarge">Take photos with our app</h1>
+                    <hr class="opacity">
+                    <p>Super simple installment: free of charge</p>
+                    <p>
+                        <button onclick="openModal()" class="button block green round">
+                            Download
+                            <i class="fab fa-apple"></i>
+                            <i class="fas fa-robot"></i>
+                            <i class="fab fa-windows"></i>
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mySlides animate-opacity" style="display: none;">
+            <img src="https://www.w3schools.com/w3images/app2.jpg" alt="" class="image"
+                style="margin-bottom: -8px; min-width: 500px;" height="1000" width="1500">
+            <div class="display-left padding hide-small" style="width: 35%;">
+                <div class="black opacity hover-opacity-off padding-large round-large">
+                    <h1 class="xlarge text-red">Take photos with our app</h1>
+                    <hr class="opacity">
+                    <p>Super simple installment: free of charge</p>
+                    <p>
+                        <button onclick="openModal()" class="button block red round">
+                            Download
+                            <i class="fab fa-apple"></i>
+                            <i class="fas fa-robot"></i>
+                            <i class="fab fa-windows"></i>
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mySlides animate-opacity" style="display: none;">
+            <img src="https://www.w3schools.com/w3images/app4.jpg" alt="" class="image"
+                style="margin-bottom: -8px; min-width: 500px;" height="1000" width="1500">
+            <div class="display-left padding hide-small" style="width: 35%;">
+                <div class="black opacity hover-opacity-off padding-large round-large">
+                    <h1 class="xlarge">Take photos with our app</h1>
+                    <hr class="opacity">
+                    <p>Super simple installment: free of charge</p>
+                    <p>
+                        <button onclick="openModal()" class="button block indigo round">
+                            Download
+                            <i class="fab fa-apple"></i>
+                            <i class="fas fa-robot"></i>
+                            <i class="fab fa-windows"></i>
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button onclick="controlSlides()"
+            class="button black display-right margin-right round hide-small hover-light-grey">
+            Take Tour
+            <i class="fas fa-angle-right"></i>
+        </button>
+        <button onclick="controlSlides()" class="button block black hide-large hide-medium">
+            Take Tour
+            <i class="fas fa-angle-right"></i>
+        </button>
+    </header>
+    <div class="modal animate-opacity">
+        <div class="modal-content" style="padding: 32px;">
+            <div class="container white">
+                <i onclick="closeModal()" class="fas fa-times button xlarge right"></i>
+                <h2 class="wide">DOWNLOAD</h2>
+                <p>Download the app in AppStore, Google Play or Microsoft Store.</p>
+                <i class="fab fa-apple"></i>
+                <i class="fas fa-robot"></i>
+                <i class="fab fa-windows"></i>
+                <p>
+                    <input type="text" class="input border" placeholder="Enter e-mail">
+                </p>
+                <button onclick="closeModal()" class="button block padding-large red margin-bottom">Fake
+                    Download</button>
+            </div>
+        </div>
+    </div>
+    <div class="padding-64 white">
+        <div class="row-padding">
+            <div class="col l8 m6">
+                <h1 class="jumbo">The App</h1>
+                <h1 class="xxxlarge text-green">
+                    <b>Why buy it?</b>
+                </h1>
+                <p>
+                    <span class="xlarge">Take photos like a pro.</span>
+                    You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <button class="button light-grey padding-large section hide-small">
+                    <i class="fas fa-download"></i>
+                    Download Application
+                </button>
+                <p>
+                    Available for
+                    <i class="fas fa-robot xlarge  text-green"></i>
+                    <i class="fab fa-apple xlarge"></i>
+                    <i class="fab fa-windows xlarge text-blue"></i>
+                </p>
+            </div>
+            <div class="col l4 m6">
+                <img src="https://www.w3schools.com/w3images/img_app.jpg" alt="" class="image right hide-small">
+            </div>
+        </div>
+    </div>
+    <script src="/AppLaunchTemplate/alt.js"></script>
+</body>
+
+</html>

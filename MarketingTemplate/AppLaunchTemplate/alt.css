@@ -1,0 +1,270 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.content{
+    margin-left: auto;
+    margin-right: auto;
+}
+html, body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 10px 0;
+    font-weight: 400;
+}
+b{
+    font-weight: bolder;
+}
+h2{
+    font-size: 30px;
+}
+.wide{
+    letter-spacing: 4px;
+}
+.black{
+    color: #fff !important;
+    background-color: #000 !important;
+}
+.display-container{
+    position: relative;
+}
+p{
+    margin: 15px 0;
+}
+.padding-64{
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+}
+.row-padding{
+    padding: 0 8px;
+}
+.row-padding::before, .row-padding::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.row-padding .col{
+    padding: 0 8px;
+}
+.col{
+    float:  left;
+    width: 100%;
+}
+hr{
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+.center{
+    text-align: center !important;
+}
+.button{
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.container{
+    padding: 0 16px;
+}
+.container::before, .container::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.button:hover{
+    background-color: #ccc !important;
+    color: #000 !important;
+}
+.block{
+    display: block;
+    width: 100%;
+}
+.green{
+    color: #fff !important;
+    background-color: #4caf50 !important;
+}
+button{
+    font: inherit;
+}
+img{
+    vertical-align: middle;
+}
+.image{
+    max-width: 100%;
+    height: auto;
+
+}
+.display-right{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+.margin-right{
+    margin-right: 16px !important;
+}
+.hover-light-grey:hover{
+    color: #000 !important;
+    background-color: #f1f1f1 !important;
+}
+.modal{
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.input{
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+.input{
+    font: inherit;
+}
+.border{
+    border: 1px solid #ccc !important;
+}
+@keyframes opac {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.animate-opacity{
+    animation: opac 0.8s;
+}
+.display-left{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+}
+.padding{
+    padding: 8px 16px !important;
+}
+.opacity{
+    opacity: 0.6;
+}
+.hover-opacity-off:hover{
+    opacity: 1;
+}
+.padding-large{
+    padding: 12px 24px !important;
+}
+.round-large{
+    border-radius: 8px;
+}
+.round{
+    border-radius: 4px;
+}
+.xlarge{
+    font-size: 24px !important;
+}
+.text-red{
+    color: #f44336 !important;
+}
+.red{
+    color: #fff !important;
+    background-color: #f44336 !important;
+}
+.indigo{
+    color: #fff !important;
+    background-color: #3f51b5;
+}
+.modal-content{
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    outline: 0;
+    width: 600px;
+}
+.white{
+    color: #000 !important;
+    background-color: #fff !important;
+}
+.right{
+    float: right !important;
+}
+.jumbo{
+    font-size: 61px !important;
+}
+.text-green{
+    color: #4caf50 !important;
+}
+.xxxlarge{
+    font-size: 48px !important;
+}
+.light-grey{
+    color: #000 !important;
+    background-color: #f1f1f1 !important;
+}
+.section{
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+}
+.text-blue{
+    color: #2196f3 !important;
+}
+@media (max-width: 600px) {
+    .hide-small{
+        display: none !important;
+    }   
+    .modal-content{
+        margin: 0 10px;
+        width: auto !important;
+    }
+}
+@media (min-width: 600px) {
+    .col.m6{
+        width: 50%;
+    }
+}
+@media (max-width: 768px) {
+    .modal{
+        padding-top: 50px;
+    }
+    .modal-content{
+        width: 500px;
+    }
+}
+@media (min-width: 600px) and (max-width: 992px){
+    .hide-medium{
+        display: none !important;
+    }
+}
+@media (min-width: 992px) {
+    .hide-large{
+        display: none !important;
+    }
+    .modal-content{
+        width: 900px;
+    }
+    .col.l8{
+        width: 66.66666%;
+    }
+    .col.l4{
+        width: 33.33333%;
+    }
+}
